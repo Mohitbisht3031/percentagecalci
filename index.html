@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>percentage calculator</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                background-color: #1abc9c;
+            }
+            .cont{
+                padding: 80px 80px 60px 80px;
+                border: #2f3640 2px solid;
+                margin-top: 180px;
+                margin-left: 240px;
+                margin-right: 240px;
+                border-radius: 25px;
+                background-color: #2f3640;
+                height: 300px;
+            }
+            .txt{
+                float: left;
+                font-size: 50px;
+                text-transform: uppercase;
+                font-family: fantasy;
+                color:#1abc9c ;
+                border-left: 2px #1abc9c solid;
+                border-right: 2px #1abc9c solid;
+                padding: 0px 6px;
+            
+            }
+            .mks{
+                float: right;
+                font-size: 35px;
+                /* color:#2f3640 ; */
+                background-color: #2f3640;
+               
+            }
+            .bttn{
+                  font-size: 18px;
+                  color: #2f3640;
+                  background-color: #1abc9c;
+                  border-radius: 50px;
+                              }
+            @media screen {
+                (max-width: 600 px;) {.txt {font-size: .5px;
+                     }}
+            @media screen (max-width: 600 px;) {.mks {font-size: .5px;
+                     }}
+                     @media screen (max-width: 600 px;){.cont {padding: 0px 0px;}
+                 }
+            
+        </style>
+        <!-- <link rel="stylesheet" href="animate.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    </head>
+    <body>
+        <div class="cont">
+            <div class="mid">
+                <div class="txt">
+                    <h3 class="animated infinite bounce delay-2s"> percentage calcy</h3>
+               </div>
+                <div class="mks">
+                  <input type="text" placeholder="subject1" id="sub1"><br>
+                  <input type="text" placeholder="subject2" id="sub2"><br>
+                  <input type="text" placeholder="subject3" id="sub3"><br>
+                  <input type="text" placeholder="subject4" id="sub4"><br>
+                  <input type="text" placeholder="subject5" id="sub5"><br>
+                  <input type="text" placeholder="subject6" id="sub6"><br>
+                  <button class="bttn">claculate</button><br>
+                </div>
+            </div>   
+        </div>
+    </body>
+</html>
