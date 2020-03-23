@@ -47,6 +47,14 @@
                   color: #273c75;
                   border-radius: 50px;
                               }
+            #para{
+                margin-top: 350px;
+                text-align: center;
+                font-size: 35px;
+                font-style: italic;
+                color:#f1f2f6 ;
+
+            }
             @media screen {
                 (max-width: 600 px;) {.txt {font-size: .5px;
                      }}
@@ -62,7 +70,7 @@
     </head>
     <body>
         <div class="cont">
-            <div class="mid">
+            <!-- <div class="mid"> -->
                 <div class="txt">
                     <h3 class="animated infinite bounce delay-2s"> percentage calcy</h3>
                </div>
@@ -73,9 +81,28 @@
                   <input type="text" placeholder="subject4" id="sub4"><br>
                   <input type="text" placeholder="subject5" id="sub5"><br>
                   <input type="text" placeholder="subject6" id="sub6"><br>
-                  <button class="bttn">claculate</button><br>
+                  <button class="bttn" onclick="perce()">claculate</button><br>
                 </div>
-            </div>   
+                <div>
+                   <h2><p id="para" class="animated infinite pulse delay-3s"></p></h2>
+                </div>
+            <!-- </div>    -->
         </div>
     </body>
 </html>
+<script>
+    
+    function perce()
+    {let x= document.getElementById("sub1").value;
+    let y= document.getElementById("sub2").value;
+    let z= document.getElementById("sub3").value;
+    let a=document.getElementById("sub4").value;
+    let b=document.getElementById("sub5").value;
+    let c=document.getElementById("sub6").value;
+    // let per= ((x+y+z+a+b+c)%6);
+    let per=(parseFloat(a)+parseFloat(b)+parseFloat(c)
+    +parseFloat(x)+parseFloat(y)+parseFloat(z))/6 ;
+    document.getElementById("para").innerHTML= 
+    "The percentage is equal "+ per+"%";    
+        }
+</script>
